@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import MuiThemeProvider from "@material-ui/core/styles/MuiThemeProvider";
+
+import "./App.css";
+import theme from "./theme/theme";
+import AppNavbar from "./components/layout/AppNavbar";
+import Carousel from "./components/views/Carousel";
+import ProductView from "./components/views/Products";
+import ServiceView from "./components/views/Services";
+import ResponsabilityView from "./components/views/Responsability";
+
+class App extends Component {
+  render() {
+    return (
+      <MuiThemeProvider theme={theme}>
+        <div style={{ position: "relative" }}>
+          <AppNavbar />
+          <Carousel />
+          <ProductView />
+          <ServiceView />
+          <ResponsabilityView />
+        </div>
+      </MuiThemeProvider>
+    );
+  }
 }
 
 export default App;

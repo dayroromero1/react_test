@@ -1,0 +1,59 @@
+.pageServices {
+  background: #f2f2f2;
+  width: 100vw;
+  height: 450px;
+}
+
+.block {
+  text-align: center;
+}
+
+.separator {
+  background: #ff5100;
+  width: 5%;
+  height: 1%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin: 0 auto;
+}
+
+.paragraph {
+  width: 35%;
+  color: #999999;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+
+.chipContainer {
+  height: 200px;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+
+.chip {
+  background: #ffffff;
+  width: 23%;
+  height: 200px;
+  float: left;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  margin-left: 1em;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.chipImages {
+  width: 80%;
+  height: 80%;
+}
+
+.chipText {
+  position: absolute;
+  top: 100px;
+}
